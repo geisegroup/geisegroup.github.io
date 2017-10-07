@@ -1,6 +1,13 @@
-$( document ).ready(function() {
-    console.log( "geise custom js" );
+$(document).ready(function() {
+	// Enable left menu for mobile
+	$(".button-collapse").sideNav();
+
+	// Set copyright year
+	var year = new Date();
+	year = year.getFullYear();
+	document.getElementById("year").textContent = year;
 });
+
 /*!
  * Materialize v0.100.2 (http://materializecss.com)
  * Copyright 2014-2017 Materialize

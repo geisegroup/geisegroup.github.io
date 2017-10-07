@@ -1,6 +1,6 @@
 # Geise Group Revamp 2017
 
-## Tools
+## Tools Used
 * [Jekyll](https://jekyllrb.com/)
 * [Gulp](https://gulpjs.com/)
 
