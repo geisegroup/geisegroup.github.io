@@ -1,5 +1,6 @@
 nav {
 	background-color: $uva-blue;
+	padding-left: 1%;
 
 	.dropdown-content li:hover,
 	.dropdown-content li.active,
@@ -18,5 +19,50 @@ nav {
 
 	li:hover {
 		background-color: $uva-lt-blue;
+	}
+
+	@media #{$medium-and-down} {
+		.brand-logo {
+			font-size: 1.5rem;
+		}
+	}
+
+	@media #{$small-and-down} {
+		.brand-logo {
+			font-size: 1.2rem;
+		}
+	}
+}
+
+#mobile-demo {
+	li a:hover {
+		color: white;
+	}
+
+	img {
+		width: 275px;
+		padding-left: 25px;
+		padding-top: 25px;
+	}
+
+	.googleScholar {
+		text-align: center;
+		min-width: 200px;
+		margin: 15%;
+		border: solid 2px $uva-lt-blue;
+
+		a {
+			color: $uva-lt-blue;
+
+			&:hover {
+				background-color: $uva-lt-blue;
+				color: white;
+			}
+		}
+
+		svg {
+			font-size: 40px;
+			margin-right: 10px;
+		}
 	}
 }

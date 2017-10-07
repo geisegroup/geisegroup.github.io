@@ -6922,8 +6922,17 @@ body {
 main {
   flex: 1 0 auto; }
 
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor; }
+
 nav {
-  background-color: #002654; }
+  background-color: #002654;
+  padding-left: 1%; }
   nav .dropdown-content li:hover,
   nav .dropdown-content li.active,
   nav .dropdown-content li.selected {
@@ -6936,6 +6945,34 @@ nav {
       color: white; }
   nav li:hover {
     background-color: #667c98; }
+  @media only screen and (max-width: 992px) {
+    nav .brand-logo {
+      font-size: 1.5rem; } }
+  @media only screen and (max-width: 600px) {
+    nav .brand-logo {
+      font-size: 1.2rem; } }
+
+#mobile-demo li a:hover {
+  color: white; }
+
+#mobile-demo img {
+  width: 275px;
+  padding-left: 25px;
+  padding-top: 25px; }
+
+#mobile-demo .googleScholar {
+  text-align: center;
+  min-width: 200px;
+  margin: 15%;
+  border: solid 2px #667c98; }
+  #mobile-demo .googleScholar a {
+    color: #667c98; }
+    #mobile-demo .googleScholar a:hover {
+      background-color: #667c98;
+      color: white; }
+  #mobile-demo .googleScholar svg {
+    font-size: 40px;
+    margin-right: 10px; }
 
 footer.page-footer {
   background-color: #002654; }
