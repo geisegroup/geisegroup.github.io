@@ -1,3 +1,22 @@
 nav {
 	background-color: $uva-blue;
+
+	.dropdown-content li:hover,
+	.dropdown-content li.active,
+	.dropdown-content li.selected {
+		background-color: $uva-lt-blue;
+	}
+
+	.dropdown-content li > a,
+	.dropdown-content li > span {
+		color: $uva-blue;
+
+		&:hover {
+			color: white;
+		}
+	}
+
+	li:hover {
+		background-color: $uva-lt-blue;
+	}
 }

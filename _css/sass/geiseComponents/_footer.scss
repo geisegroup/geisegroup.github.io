@@ -1,3 +1,23 @@
 footer.page-footer {
-	background-color: $uva-orange;
+	background-color: $uva-blue;
+
+	img {
+		max-width: 400px;
+	}
+
+	.footerLinks {
+		padding-top: 1%;
+
+		h2 {
+			text-transform: uppercase;
+			font-size: 1rem;
+			margin: 0;
+			letter-spacing: 3px;
+		}
+	}
+
+	.footer-copyright {
+		background-color: $uva-lt-blue;
+		text-align: center;
+	}
 }
