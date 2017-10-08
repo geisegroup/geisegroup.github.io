@@ -1,5 +1,5 @@
 a {
-	color: $uva-off-white;
+	color: $uva-orange;
 }
 
 body {
@@ -19,4 +19,21 @@ main {
 	stroke-width: 0;
 	stroke: currentColor;
 	fill: currentColor;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 2rem;
+	text-align: center;
+	font-weight: 600;
+}
+
+h2 {
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: $uva-lt-blue;
+}
+
+.divider {
+	background-color: $uva-lt-blue;
 }

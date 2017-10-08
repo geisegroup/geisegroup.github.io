@@ -3,16 +3,38 @@ footer.page-footer {
 
 	img {
 		max-width: 400px;
+
+		@media #{$medium-and-down} {
+			display: block;
+			margin: 0 auto;
+		}
 	}
 
 	.footerLinks {
 		padding-top: 1%;
+		h2,
+		a {
+			color: white;
+		}
 
 		h2 {
 			text-transform: uppercase;
 			font-size: 1rem;
 			margin: 0;
 			letter-spacing: 3px;
+		}
+
+		@media #{$medium-and-down} {
+			text-align: center;
+
+			h2 {
+				display: block;
+				text-align: center;
+			}
+
+			i {
+				display: none;
+			}
 		}
 	}
 
