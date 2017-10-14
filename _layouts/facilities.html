@@ -10,6 +10,18 @@ layout: default
 	{% for item in facilities %}
 		<h2>{{ item.title }}</h2>
 		<ul>
+			{% for elem in item.elements %}
+			<li>{{ elem.name }}</li>
+			
+				{% if elem.details %}
+				<ul>
+					{% for detail in elem.details %}
+					<li>- {{detail.text}}</li>
+					{% endfor %}
+				</ul>
+				{% endif %}
+			
+			{% endfor %}
 		</ul>
 	{% endfor %}
 </div>
