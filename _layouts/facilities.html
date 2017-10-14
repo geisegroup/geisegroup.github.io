@@ -2,26 +2,33 @@
 layout: default
 ---
 
-<div class="contact">
+<div class="facilities container">
 	<h1 class="page-heading">{{ page.title }}</h1>
-	<p>Our laboratory is well equipped to synthesize and prepare polymer membranes and to characterize transport and other polymer properties. Dedicated transport property measurement cells and equipment are coupled with state-of-the-art analytical equipment to characterize a wide range of water and ion transport properties in polymers. Please feel free to <a href="/contact" title="Contact Page">contact</a> us for more information on our experimental capabilities. In addition to computing resources for data collection and analysis, standard laboratory supplies, and a dedicated ultra-pure water system (Millipore), our laboratory capabilities include:</p>
-		
+	<p>Our laboratory is well equipped to synthesize and prepare polymer membranes and to characterize transport and other polymer properties. Dedicated transport property measurement cells and equipment are coupled with state-of-the-art analytical equipment to characterize a wide range of water and ion transport properties in polymers.<p> 
+
+	<p> Please feel free to <a href="/contact" title="Contact Page">contact</a> us for more information on our experimental capabilities. In addition to computing resources for data collection and analysis, standard laboratory supplies, and a dedicated ultra-pure water system (Millipore), our laboratory capabilities include:</p>
+	
 	{% assign facilities = site.facilities | sort: 'orderBy' %}
 	{% for item in facilities %}
-		<h2>{{ item.title }}</h2>
-		<ul>
+	<ul class="collapsible popout" data-collapsible="accordion">
+		<li>
+			<div class="collapsible-header">
+				<i class="material-icons">chevron_right</i>
+				{{ item.title }}
+			</div>
+			<div class="collapsible-body">
 			{% for elem in item.elements %}
-			<li>{{ elem.name }}</li>
-			
+			<p>{{ elem.name }}</p>
 				{% if elem.details %}
-				<ul>
-					{% for detail in elem.details %}
-					<li>- {{detail.text}}</li>
-					{% endfor %}
-				</ul>
+					<ul>
+						{% for detail in elem.details %}
+						<li>{{detail.text}}</li>
+						{% endfor %}
+					</ul>
 				{% endif %}
-			
 			{% endfor %}
-		</ul>
+			</div>
+		</li>
+	</ul>
 	{% endfor %}
 </div>

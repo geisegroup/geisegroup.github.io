@@ -6944,6 +6944,25 @@ h2 {
 .divider {
   background-color: #667c98; }
 
+.collapsible {
+  width: 85%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.collapsible-header {
+  color: #667c98;
+  font-weight: 500; }
+
+.collapsible-body p {
+  font-weight: 500; }
+
+.collapsible-body ul {
+  margin-left: 5%; }
+
+.collapsible-body ul:not(.browser-default) > li {
+  list-style-type: disc; }
+
 nav {
   background-color: #002654;
   padding-left: 1%; }

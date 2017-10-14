@@ -37,3 +37,29 @@ h2 {
 .divider {
 	background-color: $uva-lt-blue;
 }
+
+.collapsible {
+	width: 85%;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.collapsible-header {
+	color: $uva-lt-blue;
+	font-weight: 500;
+}
+
+.collapsible-body {
+	p {
+		font-weight: 500;
+	}
+
+	ul {
+		margin-left: 5%;
+	}
+
+	ul:not(.browser-default) > li {
+		list-style-type: disc;
+	}
+}
