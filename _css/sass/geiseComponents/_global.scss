@@ -71,3 +71,13 @@ h2 {
 		}
 	}
 }
+
+.carousel {
+	height: 300px;
+	perspective: 400px;
+
+	.carousel-item {
+		width: 225px;
+		height: 225px;
+	}
+}

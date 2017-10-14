@@ -8,27 +8,46 @@ layout: default
 
 	<p> Please feel free to <a href="/contact" title="Contact Page">contact</a> us for more information on our experimental capabilities. In addition to computing resources for data collection and analysis, standard laboratory supplies, and a dedicated ultra-pure water system (Millipore), our laboratory capabilities include:</p>
 	
+	<div class="carousel">
+		{% for item in site.facilitiesImages %}
+		<img 
+		class="carousel-item" 
+		src="/assets/images/facilities/{{ item.file }}" 
+		alt="{{ item.alt }}">
+		{% endfor %}
+	</div>
+	
+	<!-- Facilities Collection !-->
 	{% assign facilities = site.facilities | sort: 'orderBy' %}
 	{% for item in facilities %}
-	<ul class="collapsible popout" data-collapsible="accordion">
-		<li>
-			<div class="collapsible-header">
-				<i class="material-icons">chevron_right</i>
-				{{ item.title }}
-			</div>
-			<div class="collapsible-body">
-			{% for elem in item.elements %}
-			<p>{{ elem.name }}</p>
-				{% if elem.details %}
-					<ul>
-						{% for detail in elem.details %}
-						<li>{{detail.text}}</li>
-						{% endfor %}
-					</ul>
-				{% endif %}
-			{% endfor %}
-			</div>
-		</li>
-	</ul>
+		<ul class="collapsible popout" data-collapsible="accordion">
+			<li> 
+				<!-- Header Tab !-->
+				<div class="collapsible-header">
+					<i class="material-icons">chevron_right</i>
+					{{ item.title }}
+				</div>
+				
+				<!-- Content !-->
+				<div class="collapsible-body">
+					{% for elem in item.elements %}
+					
+					<!-- Top Level Item !-->
+					<p>{{ elem.name }}</p>
+					
+						<!-- Bullet Points (optional) !-->
+						{% if elem.details %}
+							<ul>
+								{% for detail in elem.details %}
+								<li>{{detail.text}}</li>
+								{% endfor %}
+							</ul>
+						{% endif %}
+						
+					{% endfor %}
+				</div>
+			</li>
+		</ul>
 	{% endfor %}
+	
 </div>

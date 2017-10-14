@@ -6964,6 +6964,13 @@ h2 {
   .collapsible .collapsible-body ul:not(.browser-default) > li {
     list-style-type: disc; }
 
+.carousel {
+  height: 300px;
+  perspective: 400px; }
+  .carousel .carousel-item {
+    width: 225px;
+    height: 225px; }
+
 nav {
   background-color: #002654;
   padding-left: 1%; }
