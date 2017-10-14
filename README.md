@@ -13,3 +13,4 @@
 
 ## References
 * [Using Gulp with Jekyll](https://aaronlasseigne.com/2016/02/03/using-gulp-with-jekyll/)
+* [Add Collections to Jekyll](https://jekyllrb.com/docs/collections/)
