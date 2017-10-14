@@ -43,23 +43,31 @@ h2 {
 	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
-}
 
-.collapsible-header {
-	color: $uva-lt-blue;
-	font-weight: 500;
-}
+	@media #{$small-and-down} {
+		width: 100%;
+	}
 
-.collapsible-body {
-	p {
+	p:first-child {
+		margin-top: 0;
+	}
+
+	.collapsible-header {
+		color: $uva-lt-blue;
 		font-weight: 500;
 	}
 
-	ul {
-		margin-left: 5%;
-	}
+	.collapsible-body {
+		p {
+			font-weight: 500;
+		}
 
-	ul:not(.browser-default) > li {
-		list-style-type: disc;
+		ul {
+			margin-left: 5%;
+		}
+
+		ul:not(.browser-default) > li {
+			list-style-type: disc;
+		}
 	}
 }
