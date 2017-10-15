@@ -5,6 +5,7 @@ layout: default
 <div class="people container">
 	<h1 class="page-heading">{{ page.title }}</h1>
 	
+	<!-- Geoffrey Geise !-->
 	<div class="geise row">
 		<img class="col s4 pull-s4 m4 l4 right" src="/assets/images/people/geise.jpg" alt="geoffrey geise" />
 		<div class="col s12 m8 l8">
@@ -23,5 +24,18 @@ layout: default
 	<h2>Geise Group Members</h2>
 	<h2>Undergraduate Researchers</h2>
 	<h2>Alumni</h2>
+	
 	<h2>Group Photos</h2>
+	<div class="groupPhotos row">
+		{% assign groupPhotos = (site.groupPhotos | sort: 'orderBy') | reverse %}
+		{% for item in groupPhotos %}
+			<div class="col s12 m6 l6">
+				<img 
+				class="materialboxed"
+				src="/assets/images/people/{{ item.file }}"
+				data-caption="{{ item.alt }}"
+				alt="{{ item.alt }}">
+			</div>
+		{% endfor %}
+	</div>
 </div>

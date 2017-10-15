@@ -7075,3 +7075,9 @@ footer.page-footer {
 
 .people .geise a.btn, .people .geise a.btn-large {
   background-color: #ee600d; }
+
+.people .groupPhotos img {
+  width: 100%; }
+
+.people .groupPhotos div {
+  margin: 1% auto; }

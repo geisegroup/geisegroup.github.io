@@ -4,4 +4,14 @@
 			background-color: $uva-orange;
 		}
 	}
+
+	.groupPhotos {
+		img {
+			width: 100%;
+		}
+
+		div {
+			margin: 1% auto;
+		}
+	}
 }
