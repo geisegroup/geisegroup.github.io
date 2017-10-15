@@ -7045,6 +7045,18 @@ footer.page-footer {
     background-color: #667c98;
     text-align: center; }
 
+.home .card-panel h2 {
+  text-align: center; }
+
+.home .card-panel li {
+  margin: 4%; }
+
+.home .card-panel .btn-large {
+  background-color: #002654; }
+
+.home .studentType {
+  font-weight: 500; }
+
 .contact {
   padding: 0 5%; }
   .contact .material-icons {
@@ -7053,11 +7065,3 @@ footer.page-footer {
   .contact iframe {
     display: block;
     margin: 5% auto; }
-
-.people .card-panel h2 {
-  border-bottom: solid 3px #667c98;
-  padding-bottom: 2%;
-  text-align: center; }
-
-.people .studentType {
-  font-weight: 500; }

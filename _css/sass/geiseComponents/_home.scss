@@ -1,0 +1,19 @@
+.home {
+	.card-panel {
+		h2 {
+			text-align: center;
+		}
+
+		li {
+			margin: 4%;
+		}
+
+		.btn-large {
+			background-color: $uva-blue;
+		}
+	}
+
+	.studentType {
+		font-weight: 500;
+	}
+}
