@@ -3,6 +3,7 @@
 ## Planning
 * [Geise Group Revamp Trello Board](https://trello.com/b/9870cdDn/geise-group-revamp)
 * Balsalmiq Mockups
+	* [People](https://github.com/elisekain/geise-group-revamp/blob/master/_wireframes/People.pdf)
 	* [Facilities](https://github.com/elisekain/geise-group-revamp/blob/master/_wireframes/Facilities.pdf)
 	* [Contact](https://github.com/elisekain/geise-group-revamp/blob/master/_wireframes/ContactDirections.pdf)
 
