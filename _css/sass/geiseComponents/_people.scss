@@ -14,4 +14,15 @@
 			margin: 1% auto;
 		}
 	}
+
+	.card-title {
+		font-size: 20px;
+		color: $uva-lt-blue;
+	}
+
+	.card-action {
+		background-color: $uva-lt-blue;
+		padding: 1px 24px;
+		color: white;
+	}
 }

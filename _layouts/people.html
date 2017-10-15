@@ -12,30 +12,49 @@ layout: default
 			<h2>Geoffrey M. Geise, Ph.D.</h2>
 			<h3>Assistant Professor of Chemical Engineering<h3>
 			<h4>Affiliate faculty in the NanoSTAR Institute at UVA</h4>
-
+			
 			<p>Ph.D. Chemical Engineering, The University of Texas at Austin, 2012<br>
-			M.S.E. Chemical Engineering, The University of Texas at Austin, 2010<br>
-			B.S. Chemical Engineering, The Pennsylvania State University, 2007</p>
+				M.S.E. Chemical Engineering, The University of Texas at Austin, 2010<br>
+				B.S. Chemical Engineering, The Pennsylvania State University, 2007
+			</p>
 			
 			<a href="/assets/docs/cv.pdf" target="_blank" title="geise cv" class="waves-effect waves-light btn-large"><i class="material-icons left">description</i>Curriculum Vitae</a>
 		</div>
 	</div>
-	
+		
 	<h2>Geise Group Members</h2>
 	<h2>Undergraduate Researchers</h2>
+	<div class="undergradResearchers row">
+		{% for item in site.undergraduateResearchers %}
+		<div class="col s12 m6">
+			<div class="card">
+				<div class="card-action">
+					<h3>{{ item.name }}</h3>
+				</div>
+				<div class="card-content">
+					<span class="card-title">{{ item.title }}</span>
+					<p>{{ item.majors }}</p>
+					<p>Class of {{ item.class}}</p>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+			
+			
 	<h2>Alumni</h2>
 	
 	<h2>Group Photos</h2>
 	<div class="groupPhotos row">
 		{% assign groupPhotos = (site.groupPhotos | sort: 'orderBy') | reverse %}
 		{% for item in groupPhotos %}
-			<div class="col s12 m6 l6">
-				<img 
-				class="materialboxed"
-				src="/assets/images/people/{{ item.file }}"
-				data-caption="{{ item.alt }}"
-				alt="{{ item.alt }}">
-			</div>
+		<div class="col s12 m6 l6">
+			<img 
+			class="materialboxed"
+			src="/assets/images/people/{{ item.file }}"
+			data-caption="{{ item.alt }}"
+			alt="{{ item.alt }}">
+		</div>
 		{% endfor %}
 	</div>
 </div>

@@ -7081,3 +7081,12 @@ footer.page-footer {
 
 .people .groupPhotos div {
   margin: 1% auto; }
+
+.people .card-title {
+  font-size: 20px;
+  color: #667c98; }
+
+.people .card-action {
+  background-color: #667c98;
+  padding: 1px 24px;
+  color: white; }
