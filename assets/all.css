@@ -7053,3 +7053,11 @@ footer.page-footer {
   .contact iframe {
     display: block;
     margin: 5% auto; }
+
+.people .card-panel h2 {
+  border-bottom: solid 3px #667c98;
+  padding-bottom: 2%;
+  text-align: center; }
+
+.people .studentType {
+  font-weight: 500; }
