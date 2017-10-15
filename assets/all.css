@@ -6941,6 +6941,13 @@ h2 {
   font-weight: 500;
   color: #667c98; }
 
+h3 {
+  font-size: 1.25rem;
+  font-weight: 500; }
+
+h4 {
+  font-size: 1rem; }
+
 .divider {
   background-color: #667c98; }
 
@@ -7065,3 +7072,6 @@ footer.page-footer {
   .contact iframe {
     display: block;
     margin: 5% auto; }
+
+.people .geise a.btn, .people .geise a.btn-large {
+  background-color: #ee600d; }
