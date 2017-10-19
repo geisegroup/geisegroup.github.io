@@ -7090,3 +7090,8 @@ footer.page-footer {
   background-color: #667c98;
   padding: 1px 24px;
   color: white; }
+
+.people .card-content .hometown {
+  border-top: solid 1px #667c98;
+  padding-top: 2%;
+  margin-top: 2%; }

@@ -23,6 +23,34 @@ layout: default
 	</div>
 		
 	<h2>Geise Group Members</h2>
+	<div class="groupMembers row">
+		{% assign groupMembers = (site.groupMembers | sort: 'orderBy') %}
+		{% for item in groupMembers %}
+		<div class="col s12 m12">
+			<div class="card horizontal">
+				<div class="card-image">
+					<img src="/assets/images/people/{{ item.image }}">
+				</div>
+				<div class="card-stacked">
+					<div class="card-action">
+						<h3>{{ item.name }}</h3>
+					</div>
+					<div class="card-content">
+						<span class="card-title">{{ item.title }}</span>
+						
+						<!-- Degrees !-->
+						{% for degree in item.degrees %}
+							<p>{{ degree.text }}</p>
+						{% endfor %}
+						
+						<p class="hometown">Hometown: {{ item.hometown }}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+	
 	<h2>Undergraduate Researchers</h2>
 	<div class="undergradResearchers row">
 		{% for item in site.undergraduateResearchers %}
@@ -34,7 +62,7 @@ layout: default
 				<div class="card-content">
 					<span class="card-title">{{ item.title }}</span>
 					<p>{{ item.majors }}</p>
-					<p>Class of {{ item.class}}</p>
+					<p>Class of {{ item.class }}</p>
 				</div>
 			</div>
 		</div>
