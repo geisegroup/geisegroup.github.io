@@ -7095,3 +7095,6 @@ footer.page-footer {
   border-top: solid 1px #667c98;
   padding-top: 2%;
   margin-top: 2%; }
+
+.people .afterPrefix {
+  color: #667c98; }

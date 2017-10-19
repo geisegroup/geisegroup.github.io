@@ -7,13 +7,14 @@ layout: default
 	
 	<!-- Geoffrey Geise !-->
 	<div class="geise row">
-		<img class="col s4 pull-s4 m4 l4 right" src="/assets/images/people/geise.jpg" alt="geoffrey geise" />
+		<img class="col s6 pull-s3 m4 l4 right" src="/assets/images/people/geise.jpg" alt="geoffrey geise" />
 		<div class="col s12 m8 l8">
 			<h2>Geoffrey M. Geise, Ph.D.</h2>
 			<h3>Assistant Professor of Chemical Engineering<h3>
 			<h4>Affiliate faculty in the NanoSTAR Institute at UVA</h4>
 			
-			<p>Ph.D. Chemical Engineering, The University of Texas at Austin, 2012<br>
+			<p>
+				Ph.D. Chemical Engineering, The University of Texas at Austin, 2012<br>
 				M.S.E. Chemical Engineering, The University of Texas at Austin, 2010<br>
 				B.S. Chemical Engineering, The Pennsylvania State University, 2007
 			</p>
@@ -26,7 +27,7 @@ layout: default
 	<div class="groupMembers row">
 		{% assign groupMembers = (site.groupMembers | sort: 'orderBy') %}
 		{% for item in groupMembers %}
-		<div class="col s12 m12">
+		<div class="col s10 push-s1 m12">
 			<div class="card horizontal">
 				<div class="card-image">
 					<img src="/assets/images/people/{{ item.image }}">
@@ -71,6 +72,13 @@ layout: default
 			
 			
 	<h2>Alumni</h2>
+	{% assign alumniMembers = (site.alumniMembers | sort: 'orderBy') %}
+	{% for item in alumniMembers %}
+	<h3>{{ item.name }}</h3>
+	<span class="card-title">{{ item.title }}</span>
+	<p><span class="afterPrefix">{{ item.afterPrefix }}:</span> {{ item.afterText }}</p>
+	
+	{% endfor %}
 	
 	<h2>Group Photos</h2>
 	<div class="groupPhotos row">
