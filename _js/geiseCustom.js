@@ -25,7 +25,7 @@ $(document).ready(function() {
 			var groupPhotos = $(".groupPhotos").children();
 			if ((groupPhotos.length % 2) !== 0) {
 				var lastPhoto = groupPhotos[groupPhotos.length - 1];
-				$(lastPhoto).addClass("push-l3").addClass("push-m3");
+				$(lastPhoto).addClass("pull-l3").addClass("pull-m3");
 			}
 			
 			// Remove "horizontal" class from group members on small screen sizes

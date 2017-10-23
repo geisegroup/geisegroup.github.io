@@ -72,13 +72,24 @@ layout: default
 			
 			
 	<h2>Alumni</h2>
-	{% assign alumniMembers = (site.alumniMembers | sort: 'orderBy') %}
-	{% for item in alumniMembers %}
-	<h3>{{ item.name }}</h3>
-	<span class="card-title">{{ item.title }}</span>
-	<p><span class="afterPrefix">{{ item.afterPrefix }}:</span> {{ item.afterText }}</p>
-	
-	{% endfor %}
+	<div class="alumniMembers row">
+		{% assign alumniMembers = (site.alumniMembers | sort: 'orderBy') %}
+		{% for item in alumniMembers %}
+
+		<div class="col s12 m6">
+			<div class="card">
+				<div class="card-action">
+					<h3>{{ item.name }}</h3>
+				</div>
+				<div class="card-content">
+					<span class="card-title">{{ item.title }}</span>
+					<p>{{ item.afterPrefix }}:</p>
+					<p>{{ item.afterText }}</p>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
 	
 	<h2>Group Photos</h2>
 	<div class="groupPhotos row">

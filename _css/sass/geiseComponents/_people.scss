@@ -18,6 +18,7 @@
 	.card-title {
 		font-size: 20px;
 		color: $uva-lt-blue;
+		font-weight: 300;
 	}
 
 	.card-action {
@@ -30,9 +31,5 @@
 		border-top: solid 1px $uva-lt-blue;
 		padding-top: 2%;
 		margin-top: 2%;
-	}
-	
-	.afterPrefix {
-		color: $uva-lt-blue;
-	}
+	}	
 }

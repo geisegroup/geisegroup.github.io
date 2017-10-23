@@ -7084,7 +7084,8 @@ footer.page-footer {
 
 .people .card-title {
   font-size: 20px;
-  color: #667c98; }
+  color: #667c98;
+  font-weight: 300; }
 
 .people .card-action {
   background-color: #667c98;
@@ -7095,6 +7096,3 @@ footer.page-footer {
   border-top: solid 1px #667c98;
   padding-top: 2%;
   margin-top: 2%; }
-
-.people .afterPrefix {
-  color: #667c98; }
