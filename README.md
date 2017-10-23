@@ -8,6 +8,7 @@
 	* [Facilities](https://github.com/elisekain/geise-group-revamp/blob/master/_wireframes/Facilities.pdf)
 	* [Contact](https://github.com/elisekain/geise-group-revamp/blob/master/_wireframes/ContactDirections.pdf)
 	* [Water Purification](https://github.com/elisekain/geise-group-revamp/blob/master/_wireframes/WaterPurification.pdf)
+	* [Renewable Energy](https://github.com/elisekain/geise-group-revamp/blob/master/_wireframes/RenewableEnergy.pdf)
 
 ## Tools Used
 * [Jekyll](https://jekyllrb.com/)
