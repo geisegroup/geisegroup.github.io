@@ -7096,3 +7096,8 @@ footer.page-footer {
   border-top: solid 1px #667c98;
   padding-top: 2%;
   margin-top: 2%; }
+
+.water img, .energy img {
+  display: block;
+  margin: 5% auto;
+  max-width: 100%; }
