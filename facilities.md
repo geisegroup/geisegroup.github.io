@@ -1,5 +1,5 @@
 ---
 layout: facilities
 title: Research Facilities
-permalink: /facilities.html
+permalink: /facilities/
 ---
