@@ -12,7 +12,7 @@ layout: default
 		{% for item in site.facilitiesImages %}
 			<img 
 			class="carousel-item" 
-			src="{{ "/assets/images/facilities/{{ item.file }}" | absolute_url }}"
+			src="{{ "/assets/images/facilities/" | append: item.file | absolute_url }}"
 			alt="{{ item.alt }}">
 		{% endfor %}
 	</div>
