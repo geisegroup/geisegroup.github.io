@@ -9,12 +9,12 @@
 	</svg>
 	<nav>
 		<div class="nav-wrapper">
-			<a href="/" class="brand-logo">Geise Research Group</a>
+			<a href="{{ "/" | absolute_url }}" class="brand-logo">Geise Research Group</a>
 			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 			
 			<ul id="dropdown1" class="dropdown-content">
-				<li><a href="/water">Water Purification</a></li>
-				<li><a href="/energy">Renewable Energy</a></li>
+				<li><a href="{{ "/water" | absolute_url }}">Water Purification</a></li>
+				<li><a href="{{ "/energy" | absolute_url }}">Renewable Energy</a></li>
 			</ul>
 			
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -23,19 +23,19 @@
 					<a class="dropdown-button" href="#!" data-activates="dropdown1">About Our Research<i class="material-icons right">arrow_drop_down</i>
 					</a>
 				</li>
-				<li><a href="/people">People</a></li>
-				<li><a href="/facilities">Facilities</a></li>
-				<li><a href="/contact">Contact</a></li>
+				<li><a href="{{ "/people" | absolute_url }}">People</a></li>
+				<li><a href="{{ "/facilities" | absolute_url }}">Facilities</a></li>
+				<li><a href="{{ "/contact" | absolute_url }}">Contact</a></li>
 			</ul>
 			
 			<ul class="side-nav" id="mobile-demo">
 				<img src="{{ "/assets/images/che_logo_color.png" | absolute_url }}" alt="uva chemical engineering logo"/>
-				<li><a href="/">Geise Research Group</a></li>
-				<li><a href="/water">Water Purification</a></li>
-				<li><a href="/energy">Renewable Energy</a></li>
-				<li><a href="/people">People</a></li>
-				<li><a href="/facilities">Facilities</a></li>
-				<li><a href="/contact">Contact</a></li>
+				<li><a href="{{ "/" | absolute_url }}">Geise Research Group</a></li>
+				<li><a href="{{ "/water" | absolute_url }}">Water Purification</a></li>
+				<li><a href="{{ "/energy" | absolute_url }}">Renewable Energy</a></li>
+				<li><a href="{{ "/people" | absolute_url }}">People</a></li>
+				<li><a href="{{ "/facilities" | absolute_url }}">Facilities</a></li>
+				<li><a href="{{ "/contact" | absolute_url }}">Contact</a></li>
 				<div class="googleScholar">
 					<a href="https://scholar.google.com/citations?user=pR8eT_sAAAAJ" target="_blank" class="valign-wrapper">
 						<svg class="icon icon-GoogleScholar"><use xlink:href="#icon-GoogleScholar"></use></svg>
