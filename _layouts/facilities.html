@@ -9,7 +9,8 @@ layout: default
 	<p> Please feel free to <a href="{{ "/contact" | absolute_url }}" title="Contact Page">contact</a> us for more information on our experimental capabilities. In addition to computing resources for data collection and analysis, standard laboratory supplies, and a dedicated ultra-pure water system (Millipore), our laboratory capabilities include:</p>
 	
 	<div class="carousel">
-		{% for item in site.facilitiesImages %}
+		{% assign facilitiesImages = site.facilitiesImages | sort: 'orderBy' %}
+		{% for item in facilitiesImages %}
 			<img 
 			class="carousel-item" 
 			src="{{ "/assets/images/facilities/" | append: item.file | absolute_url }}"
