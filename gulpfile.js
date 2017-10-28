@@ -1,5 +1,7 @@
 const gulp = require('gulp');
 const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
+const minify = require('gulp-minify-css');
 const sass = require('gulp-sass');
 const child = require('child_process');
 const gutil = require('gulp-util');
@@ -13,12 +15,14 @@ gulp.task('css', () => {
   gulp.src(cssFiles)
     .pipe(sass())
     .pipe(concat('all.css'))
+	.pipe(minify())
     .pipe(gulp.dest('assets'))
 });
 
 gulp.task('js', () => {
   gulp.src(jsFiles)
     .pipe(concat('all.js'))
+	.pipe(uglify())
     .pipe(gulp.dest('assets'))
 });
 
