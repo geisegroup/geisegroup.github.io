@@ -62,4 +62,20 @@ $(document).ready(function() {
 	};
 
 	$("#geiseGroupIcons").hover(toLightning, toDrop);
+
+	// Logo Animation Code Mobile Nav
+	var svg = document.getElementById("geiseGroupIconsMobile");
+	var s = Snap(svg);
+	var dropMobile = Snap.select("#dropMobile");
+	var lightningMobile = Snap.select("#lightningMobile");
+	var dropPointsMobile = drop.node.getAttribute("d");
+	var lightningPointsMobile = lightning.node.getAttribute("d");
+	var toLightningMobile = function() {
+		dropMobile.animate({ d: lightningPointsMobile }, 800, mina.easeinout);
+	};
+	var toDropMobile = function() {
+		dropMobile.animate({ d: dropPointsMobile }, 800, mina.easeinout);
+	};
+
+	$("#geiseGroupIconsMobile").hover(toLightningMobile, toDropMobile);
 });
