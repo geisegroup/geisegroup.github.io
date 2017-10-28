@@ -55,13 +55,11 @@ $(document).ready(function() {
 	var dropPoints = drop.node.getAttribute("d");
 	var lightningPoints = lightning.node.getAttribute("d");
 	var toLightning = function() {
-		console.log("TO LIGHTNING");
-		drop.animate({ d: lightningPoints }, 1000, mina.backout);
+		drop.animate({ d: lightningPoints }, 800, mina.easeinout);
 	};
 	var toDrop = function() {
-		console.log("TO DROP");
-		lightning.animate({ d: dropPoints }, 1000, mina.backout);
+		drop.animate({ d: dropPoints }, 800, mina.easeinout);
 	};
 
-	$("#geiseGroupHomeLink").hover(toLightning, toDrop);
+	$("#geiseGroupIcons").hover(toLightning, toDrop);
 });

@@ -25,6 +25,10 @@ nav {
 		.brand-logo {
 			font-size: 1.5rem;
 		}
+
+		#geiseGroupIcons {
+			display: none;
+		}
 	}
 
 	@media #{$small-and-down} {
