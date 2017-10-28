@@ -1,0 +1,9 @@
+.facilities {
+	i {
+		transition: transform 0.3s;
+	}
+
+	.active i {
+		transform: rotate(90deg);
+	}
+}
