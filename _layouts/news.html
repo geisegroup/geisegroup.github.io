@@ -5,17 +5,22 @@ layout: default
 <div class="archive container">
 	<h1 class="page-heading">{{ page.title }}</h1>
 	<div class="row archiveLinks">
+		{% assign currentYear = 'now' %}
 		<div class="col l3 m3 s6">
-			<a href="{{ "/archive/2017" | absolute_url }}" class="waves-effect waves-light btn">2017 News Archive</a>
+			{% assign currentYearFormat = currentYear | date: "%Y" %}
+			<a href="{{ "/archive/" | append:currentYearFormat | absolute_url }}" class="waves-effect waves-light btn">{{ currentYear | date: "%Y" }} News Archive</a>
 		</div>
 		<div class="col l3 m3 s6">
-			<a href="{{ "/archive/2016" | absolute_url }}" class="waves-effect waves-light btn">2016 News Archive</a>
+			{% assign lastYearFormat = currentYear | date:'%s' | minus:31557600 | date:"%Y" %}
+			<a href="{{ "/archive/" | append:lastYearFormat | absolute_url }}" class="waves-effect waves-light btn">{{ lastYearFormat }} News Archive</a>
 		</div>
 		<div class="col l3 m3 s6">
-			<a href="{{ "/archive/2015" | absolute_url }}" class="waves-effect waves-light btn">2015 News Archive</a>
+			{% assign TwoYearsAgoFormat = currentYear | date:'%s' | minus:63115200 | date:"%Y" %}
+			<a href="{{ "/archive/" | append:TwoYearsAgoFormat | absolute_url }}" class="waves-effect waves-light btn">{{ TwoYearsAgoFormat }} News Archive</a>
 		</div>
 		<div class="col l3 m3 s6">
-			<a href="{{ "/archive/2014" | absolute_url }}" class="waves-effect waves-light btn">2014 News Archive</a>
+			{% assign ThreeYearsAgoFormat = currentYear | date:'%s' | minus:94672800 | date:"%Y" %}
+			<a href="{{ "/archive/" | append:ThreeYearsAgoFormat | absolute_url }}" class="waves-effect waves-light btn">{{ ThreeYearsAgoFormat }} News Archive</a>
 		</div>
 	</div>
 	<div class="row">

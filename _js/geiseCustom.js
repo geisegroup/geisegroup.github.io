@@ -2,11 +2,6 @@ $(document).ready(function() {
 	// Enable left menu for mobile
 	$(".button-collapse").sideNav();
 
-	// Set copyright year
-	var year = new Date();
-	year = year.getFullYear();
-	document.getElementById("year").textContent = year;
-
 	// Facilities Page
 	if (window.location.href.includes("facilities")) {
 		// Enable carousel of images for facilities page
