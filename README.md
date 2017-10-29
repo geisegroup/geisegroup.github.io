@@ -4,6 +4,7 @@
 * [Geise Group Revamp Trello Board](https://trello.com/b/9870cdDn/geise-group-revamp)
 * [Color Palette](https://coolors.co/002654-ee600d-667c98-cfd6df-ffffff)
 * Balsalmiq Mockups
+	* [Home](https://github.com/elisekain/geise-group-revamp/blob/master/_wireframes/Home.pdf)
 	* [People](https://github.com/elisekain/geise-group-revamp/blob/master/_wireframes/People.pdf)
 	* [Facilities](https://github.com/elisekain/geise-group-revamp/blob/master/_wireframes/Facilities.pdf)
 	* [Contact](https://github.com/elisekain/geise-group-revamp/blob/master/_wireframes/ContactDirections.pdf)
