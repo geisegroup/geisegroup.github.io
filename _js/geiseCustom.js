@@ -57,13 +57,13 @@ $(document).ready(function() {
 			document.body.getBoundingClientRect();
 			if (document.body.clientWidth < 790) {
 				$(".archive .card").removeClass("horizontal");
-				$(".archive .col")
+				$(".archive .newsItem")
 					.removeClass("m12")
 					.addClass("m8")
 					.addClass("push-m2");
 			} else {
 				$(".archive .card").addClass("horizontal");
-				$(".archive .col")
+				$(".archive .newsItem")
 					.addClass("m12")
 					.removeClass("m8")
 					.removeClass("push-m2");

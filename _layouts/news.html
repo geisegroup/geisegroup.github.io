@@ -4,11 +4,25 @@ layout: default
 
 <div class="archive container">
 	<h1 class="page-heading">{{ page.title }}</h1>
+	<div class="row archiveLinks">
+		<div class="col l3 m3 s6">
+			<a href="{{ "/archive/2017" | absolute_url }}" class="waves-effect waves-light btn">2017 News Archive</a>
+		</div>
+		<div class="col l3 m3 s6">
+			<a href="{{ "/archive/2016" | absolute_url }}" class="waves-effect waves-light btn">2016 News Archive</a>
+		</div>
+		<div class="col l3 m3 s6">
+			<a href="{{ "/archive/2015" | absolute_url }}" class="waves-effect waves-light btn">2015 News Archive</a>
+		</div>
+		<div class="col l3 m3 s6">
+			<a href="{{ "/archive/2014" | absolute_url }}" class="waves-effect waves-light btn">2014 News Archive</a>
+		</div>
+	</div>
 	<div class="row">
 		{% assign newsItems = site.newsItems | where_exp:"item","item.year == page.limitYear" | sort: 'date' | reverse %}
 
 		{% for item in newsItems %}
-		<div class="col s10 push-s1 m12">
+		<div class="newsItem col s10 push-s1 m12">
 			<div class="card horizontal">
 				
 				{% if item.image %}
