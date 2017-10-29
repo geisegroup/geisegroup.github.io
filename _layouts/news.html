@@ -5,15 +5,18 @@ layout: default
 <div class="archive container">
 	<h1 class="page-heading">{{ page.title }}</h1>
 	<div class="row">
-		{% assign newsItems = (site.newsItems | sort: 'date') | reverse %}
+		{% assign newsItems = site.newsItems | where_exp:"item","item.year == page.limitYear" | sort: 'date' | reverse %}
+
 		{% for item in newsItems %}
 		<div class="col s10 push-s1 m12">
 			<div class="card horizontal">
+				
 				{% if item.image %}
 				<div class="card-image">
 					<img src="{{ "/assets/images/news/" | append: item.image | absolute_url }}">
 				</div>
 				{% endif %}
+				
 				<div class="card-stacked">
 					<div class="card-action">
 						<h3>{{ item.date | date: "%B %Y" }}</h3>
