@@ -47,6 +47,30 @@ $(document).ready(function() {
 		}
 	}
 
+	// News Archives
+	if (window.location.href.includes("archive")) {
+		window.addEventListener("resize", archivePageCheck);
+		archivePageCheck();
+
+		function archivePageCheck() {
+			// Remove "horizontal" class from news items on small screen sizes
+			document.body.getBoundingClientRect();
+			if (document.body.clientWidth < 790) {
+				$(".archive .card").removeClass("horizontal");
+				$(".archive .col")
+					.removeClass("m12")
+					.addClass("m8")
+					.addClass("push-m2");
+			} else {
+				$(".archive .card").addClass("horizontal");
+				$(".archive .col")
+					.addClass("m12")
+					.removeClass("m8")
+					.removeClass("push-m2");
+			}
+		}
+	}
+
 	// Logo Animation Code
 	var svg = document.getElementById("geiseGroupIcons");
 	var s = Snap(svg);
