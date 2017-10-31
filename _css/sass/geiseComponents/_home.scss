@@ -1,9 +1,5 @@
 .home {
 	.card-panel {
-		h2 {
-			text-align: center;
-		}
-
 		li {
 			margin: 4%;
 		}
@@ -15,5 +11,15 @@
 
 	.studentType {
 		font-weight: 500;
+	}
+
+	.homeGroupPhoto img {
+		max-width: 100%;
+	}
+
+	.homeIntro {
+		.btn-large {
+			background-color: $uva-orange;
+		}
 	}
 }
