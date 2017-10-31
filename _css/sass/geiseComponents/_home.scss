@@ -20,7 +20,8 @@
 		max-width: 100%;
 	}
 
-	.homeIntro {
+	.homeIntro,
+	.latestNews {
 		.btn-large {
 			background-color: $uva-orange;
 		}
@@ -52,6 +53,20 @@
 			@media #{$medium-and-down} {
 				margin-top: 3%;
 			}
+		}
+	}
+
+	.publications,
+	.joinGeiseGroup,
+	.latestNews {
+		h2 {
+			color: black;
+		}
+	}
+
+	.latestNews {
+		h2 {
+			margin-top: 5%;
 		}
 	}
 }

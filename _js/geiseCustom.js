@@ -42,12 +42,12 @@ $(document).ready(function() {
 		}
 	}
 
-	// News Archives
-	if (window.location.href.includes("archive")) {
-		window.addEventListener("resize", archivePageCheck);
-		archivePageCheck();
+	// News Items
+	if (window.location.href.includes("archive") || window.location.pathname == "/") {
+		window.addEventListener("resize", newsCheck);
+		newsCheck();
 
-		function archivePageCheck() {
+		function newsCheck() {
 			// Remove "horizontal" class from news items on small screen sizes
 			document.body.getBoundingClientRect();
 			if (document.body.clientWidth < 790) {
