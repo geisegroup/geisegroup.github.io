@@ -1,4 +1,7 @@
 .home {
+	h2 {
+		margin: 1%;
+	}
 	.card-panel {
 		li {
 			margin: 4%;
@@ -20,6 +23,35 @@
 	.homeIntro {
 		.btn-large {
 			background-color: $uva-orange;
+		}
+	}
+
+	.waterArticle,
+	.groupArticle,
+	.energyArticle {
+		padding: 3% 0;
+
+		.btn {
+			background-color: $uva-lt-blue;
+		}
+
+		img {
+			display: block;
+			margin: 5% auto;
+		}
+
+		@media #{$medium-and-down} {
+			padding: 0;
+		}
+	}
+
+	.groupArticle {
+		img {
+			margin-top: 12%;
+
+			@media #{$medium-and-down} {
+				margin-top: 3%;
+			}
 		}
 	}
 }
