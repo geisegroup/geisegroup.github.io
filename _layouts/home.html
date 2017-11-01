@@ -5,9 +5,14 @@ layout: default
 <div class="home container">
 	<h1 class="page-heading">Polymer Membrane Research at UVA</h1>
 	<div class="row">
+		{% assign groupPhotos = site.groupPhotos | sort: 'orderBy' | reverse %}
+		{% for item in groupPhotos limit:1 %}
+
 		<div class="col s12 m8 l8 push-l2 push-m2 homeGroupPhoto">
-			<img src="{{ "/assets/images/people/geisegroup_fall17.jpg" | absolute_url }}" alt="geise research group" class="z-depth-3" />
+			<img src="{{ "/assets/images/people/" | append: item.file | absolute_url }}" alt="geise research group" class="z-depth-3" />
 		</div>
+		
+		{% endfor %}
 		<div class="col s12 m10 l10 push-l1 push-m1 center-align homeIntro">
 			<p>The Geise research group seeks to develop structure/property/ processing relationships to guide polymeric materials design for membrane-based liquid separation and energy applications by understanding the influence of nano- and molecular-scale interactions and phenomena on mass transfer and system-level performance.</p>
 		
