@@ -2,11 +2,15 @@ footer.page-footer {
 	background-color: $uva-blue;
 
 	img {
-		max-width: 100%;
+		max-width: 400px;
 
 		@media #{$medium-and-down} {
 			display: block;
 			margin: 0 auto;
+		}
+
+		@media #{$small-and-down} {
+			width: 400px;
 		}
 	}
 
@@ -45,5 +49,6 @@ footer.page-footer {
 	.footer-copyright {
 		background-color: $uva-lt-blue;
 		text-align: center;
+		color: white;
 	}
 }

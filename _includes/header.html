@@ -39,7 +39,7 @@
 			</ul>
 			
 			<!-- Left Slide Nav -->
-			<ul class="side-nav" id="mobile-demo">
+			<div class="side-nav" id="mobile-demo">
 				<!-- SVG Drop to Lightning -->
 				<svg id="geiseGroupIconsMobile" width="300" height="54" viewBox="0 0 35 37" xmlns="http://www.w3.org/2000/svg">
 					<!-- Water Drop Path -->
@@ -47,19 +47,21 @@
 					<!-- Lightning Bolt Path -->
 					<path id="lightningMobile" fill="#667c98" opacity="0" d="M12 0l-12 16h12l-8 16 28-20h-16l12-12z"></path>
 				</svg>
-				<li><a href="{{ "/" | absolute_url }}">Home</a></li>
-				<li><a href="{{ "/water" | absolute_url }}">Water Purification</a></li>
-				<li><a href="{{ "/energy" | absolute_url }}">Renewable Energy</a></li>
-				<li><a href="{{ "/people" | absolute_url }}">People</a></li>
-				<li><a href="{{ "/facilities" | absolute_url }}">Facilities</a></li>
-				<li><a href="{{ "/contact" | absolute_url }}">Contact</a></li>
+				<ul>
+					<li><a href="{{ "/" | absolute_url }}">Home</a></li>
+					<li><a href="{{ "/water" | absolute_url }}">Water Purification</a></li>
+					<li><a href="{{ "/energy" | absolute_url }}">Renewable Energy</a></li>
+					<li><a href="{{ "/people" | absolute_url }}">People</a></li>
+					<li><a href="{{ "/facilities" | absolute_url }}">Facilities</a></li>
+					<li><a href="{{ "/contact" | absolute_url }}">Contact</a></li>
+				</ul>
 				<div class="googleScholar">
 					<a href="https://scholar.google.com/citations?user=pR8eT_sAAAAJ" target="_blank" class="valign-wrapper">
 						<svg class="icon icon-GoogleScholar"><use xlink:href="#icon-GoogleScholar"></use></svg>
 						Google Scholar
 					</a>
 				</div>
-			</ul>
+			</div>
 		</div>
 	</nav>
 </header>

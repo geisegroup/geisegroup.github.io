@@ -32,7 +32,7 @@ layout: default
 				
 				{% if item.image %}
 				<div class="card-image">
-					<img src="{{ "/assets/images/news/" | append: item.image | absolute_url }}">
+					<img src="{{ "/assets/images/news/" | append: item.image | absolute_url }}" alt={{item.title}}>
 				</div>
 				{% endif %}
 				
