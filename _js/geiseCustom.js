@@ -43,7 +43,11 @@ $(document).ready(function() {
 	}
 
 	// News Items
-	if (window.location.href.includes("archive") || window.location.pathname == "/") {
+	if (
+		window.location.href.includes("archive") ||
+		window.location.pathname == "/geise-group-revamp/" ||
+		window.location.pathname == "/"
+	) {
 		window.addEventListener("resize", newsCheck);
 		newsCheck();
 
