@@ -25,9 +25,7 @@
 	if ("serviceWorker" in navigator) {
 		navigator.serviceWorker
 		.register("{{ "/sw.js" | absolute_url }}")
-		.then(function(registration) {
-			console.log("Service Worker registration successful with scope: ", registration.scope);
-		})
+		.then(function(registration) {})
 		.catch(function(err) {
 			console.log("Service Worker registration failed: ", err);
 		});

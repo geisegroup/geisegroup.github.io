@@ -5,22 +5,21 @@ var urlsToCache = [];
 
 // Cache assets
 {% for asset in site.static_files %}
-	urlsToCache.push("{{ asset.path | absolute_url }}");
+urlsToCache.push("{{ asset.path | absolute_url }}");
 {% endfor %}
 
 // Cache pages
 {% for page in site.html_pages %}
-	urlsToCache.push("{{ page.url | absolute_url }}")
+urlsToCache.push("{{ page.url | absolute_url }}")
 {% endfor %}
 
-// Cache name: adjust version number to invalidate service worker cachce.
-var CACHE_NAME = "geise-group-cache-v3";
+// Cache name: adjust version number to invalidate service worker cache.
+var CACHE_NAME = "geise-group-cache-" + {{ "now" | date: "%Y%m%d%H%M%S" }};
 
 self.addEventListener("install", function(event) {
 	// Perform install steps
 	event.waitUntil(
 		caches.open(CACHE_NAME).then(function(cache) {
-			console.log("Opened cache");
 			return cache.addAll(urlsToCache);
 		})
 	);
@@ -49,6 +48,23 @@ self.addEventListener("fetch", function(event) {
 				cache.put(event.request, response.clone());
 				return response;
 			});
+		})
+	);
+});
+
+// Clean out old caches
+self.addEventListener('activate', function(event) {
+	event.waitUntil(
+		caches.keys().then(function(cacheNames) {
+			return Promise.all(
+				cacheNames.filter(function(cacheName) {
+					if (cacheName !== CACHE_NAME) {
+						return true;
+					}
+				}).map(function(cacheName) {
+					return caches.delete(cacheName);
+				})
+			);
 		})
 	);
 });
