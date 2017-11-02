@@ -5,12 +5,12 @@ var urlsToCache = [];
 
 // Cache assets
 {% for asset in site.static_files %}
-	urlsToCache.push("{{ asset.path }}");
+	urlsToCache.push("{{ asset.path | absolute_url }}");
 {% endfor %}
 
 // Cache pages
 {% for page in site.html_pages %}
-	urlsToCache.push("{{ page.url }}")
+	urlsToCache.push("{{ page.url | absolute_url }}")
 {% endfor %}
 
 // Cache name: adjust version number to invalidate service worker cachce.
