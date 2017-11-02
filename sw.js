@@ -14,7 +14,7 @@ var urlsToCache = [];
 {% endfor %}
 
 // Cache name: adjust version number to invalidate service worker cachce.
-var CACHE_NAME = "geise-group-cache-v2";
+var CACHE_NAME = "geise-group-cache-v3";
 
 self.addEventListener("install", function(event) {
 	// Perform install steps
