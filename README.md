@@ -21,3 +21,4 @@
 ## References
 * [Using Gulp with Jekyll](https://aaronlasseigne.com/2016/02/03/using-gulp-with-jekyll/)
 * [Add Collections to Jekyll](https://jekyllrb.com/docs/collections/)
+* [Service Workers with Jekyll](https://jamesiv.es/jekyll/amp/2017/05/09/serviceworkers-with-jekyll.html)
