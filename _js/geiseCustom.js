@@ -68,6 +68,19 @@ $(document).ready(function() {
 					.removeClass("push-m2");
 			}
 		}
+
+		window.addEventListener("resize", removeVerticalAlign);
+		removeVerticalAlign();
+
+		function removeVerticalAlign() {
+			// Remove "valign-wrapper" class from home articles on small screen sizes
+			document.body.getBoundingClientRect();
+			if (document.body.clientWidth < 1000) {
+				$(".homeArticle").removeClass("valign-wrapper");
+			} else {
+				$(".homeArticle").addClass("valign-wrapper");
+			}
+		}
 	}
 
 	// Logo Animation Code

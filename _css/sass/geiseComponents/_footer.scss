@@ -11,6 +11,7 @@ footer.page-footer {
 
 		@media #{$small-and-down} {
 			width: 400px;
+			max-width: 100%;
 		}
 	}
 
