@@ -60,4 +60,20 @@ gulp.task("serve", () => {
 	gulp.watch(jsFiles, ["js"]);
 });
 
+gulp.task("jekyll-production", () => {
+	const jekyll = child.spawn("jekyll", ["build", "JEKYLL_ENV=production", "--watch", "--drafts"]);
+
+	const jekyllLogger = buffer => {
+		buffer
+			.toString()
+			.split(/\n/)
+			.forEach(message => gutil.log("Jekyll: " + message));
+	};
+
+	jekyll.stdout.on("data", jekyllLogger);
+	jekyll.stderr.on("data", jekyllLogger);
+});
+
 gulp.task("default", ["css", "js", "jekyll", "serve"]);
+
+gulp.task("production", ["css", "js", "jekyll-production"]);

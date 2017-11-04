@@ -1,3 +1,7 @@
+---
+layout: null
+---
+
 {
 	"name": "Geise Research Group",
 	"short_name": "Geise Group",
@@ -8,17 +12,17 @@
 	"start_url": "/",
 	"icons": [
 		{
-			"src": "http://localhost:4000/assets/svg/droplet-64x64.svg",
+			"src": "{{ "/assets/svg/droplet-64x64.svg" | absolute_url }}",
 			"sizes": "64x64",
 			"type": "image/svg"
 		},
 		{
-			"src": "http://localhost:4000/assets/svg/droplet-128x128.svg",
+			"src": "{{ "/assets/svg/droplet-128x128.svg" | absolute_url }}",
 			"sizes": "128x128",
 			"type": "image/svg"
 		},
 		{
-			"src": "http://localhost:4000/assets/svg/droplet-512x512.svg",
+			"src": "{{ "/assets/svg/droplet-512x512.svg" | absolute_url }}",
 			"sizes": "512x512",
 			"type": "image/svg"
 		}
