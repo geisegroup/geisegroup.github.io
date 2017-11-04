@@ -61,7 +61,10 @@ gulp.task("serve", () => {
 });
 
 gulp.task("jekyll-production", () => {
-	const jekyll = child.spawn("jekyll", ["build", "JEKYLL_ENV=production", "--watch", "--drafts"]);
+	var productionEnv = process.env;
+	productionEnv.JEKYLL_ENV = "production";
+
+	const jekyll = child.spawn("jekyll", ["build", "--watch", "--drafts"]);
 
 	const jekyllLogger = buffer => {
 		buffer
