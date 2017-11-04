@@ -3,8 +3,8 @@ layout: null
 ---
 
 {
-	"name": "Geise Research Group",
-	"short_name": "Geise Group",
+	"name": "{{ site.title }}",
+	"short_name": "{{ site.short_title }}",
 	"theme_color": "#002654",
 	"background_color": "#002654",
 	"display": "browser",
