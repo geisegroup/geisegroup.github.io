@@ -3,7 +3,7 @@ This is the website for the Geise Research Group at the University of Virginia. 
 
 After evaluating my options, I chose to use Jekyll (with heavy use of their collections feature) and Gulp to build an HTML/CSS/JS site. In an effort to apply best practices towards creating a Progressive Web App, I added a manifest.json file and wrote a service worker to cache files and assets. Currently, since the university server does not support HTTPS protocol, the service worker is disabled.
 
-Project installation instructions are below. See the [Content Modification Instructions](http://example.com) for information on how to update the content (like news stories, group photos and facility capabilities).
+Project installation instructions are below. See the [Content Modification Instructions](https://elisekain.gitbooks.io/geise-website/content/) for information on how to update the content (like news stories, group photos and facility capabilities).
 
 ## Installation Instructions
 
