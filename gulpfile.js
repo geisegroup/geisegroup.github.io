@@ -11,8 +11,8 @@ const cssFiles = "_css/**/*.?(s)css";
 const jsFiles = "_js/*.js";
 const siteRoot = "_site";
 
-gulp.task("css", () => {
-	gulp
+gulp.task("css", async () => {
+	await gulp
 		.src(cssFiles)
 		.pipe(sass())
 		.pipe(concat("all.css"))
@@ -20,8 +20,8 @@ gulp.task("css", () => {
 		.pipe(gulp.dest("assets"));
 });
 
-gulp.task("js", () => {
-	gulp
+gulp.task("js", async () => {
+	await gulp
 		.src(jsFiles)
 		.pipe(concat("all.js"))
 		.pipe(uglify())
@@ -45,6 +45,7 @@ gulp.task("jekyll", () => {
 
 	jekyll.stdout.on("data", jekyllLogger);
 	jekyll.stderr.on("data", jekyllLogger);
+	return jekyll;
 });
 
 gulp.task("serve", () => {
@@ -77,6 +78,6 @@ gulp.task("jekyll-production", () => {
 	jekyll.stderr.on("data", jekyllLogger);
 });
 
-gulp.task("default", ["css", "js", "jekyll", "serve"]);
+gulp.task("default", gulp.series("css", "js", "jekyll", "serve"));
 
-gulp.task("production", ["css", "js", "jekyll-production"]);
+gulp.task("production", gulp.series("css", "js", "jekyll-production"));
