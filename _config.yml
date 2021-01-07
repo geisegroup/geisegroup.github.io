@@ -18,7 +18,7 @@ short_title: Geise Group
 email: geise@virginia.edu
 description: >- # this means to ignore newlines until "baseurl:"
   The website for the Geise Research Group at the University of Virginia.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://geisegroup.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics: "UA-43932628-9"
 
