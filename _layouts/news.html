@@ -34,6 +34,10 @@ layout: default
 			{% assign SixYearsAgoFormat = currentYear | date:'%s' | minus:189345600 | date:"%Y" %}
 			<a href="{{ "/archive/" | append:SixYearsAgoFormat | absolute_url }}" class="waves-effect waves-light btn">{{ SixYearsAgoFormat }} News Archive</a>
 		</div>
+		<div class="col l3 m3 s6">
+			{% assign SevenYearsAgoFormat = currentYear | date:'%s' | minus:220903200 | date:"%Y" %}
+			<a href="{{ "/archive/" | append:SixYearsAgoFormat | absolute_url }}" class="waves-effect waves-light btn">{{ SixYearsAgoFormat }} News Archive</a>
+		</div>
 	</div>
 	<div class="row">
 		{% assign newsItems = site.newsItems | where_exp:"item","item.year == page.limitYear" | sort: 'date' | reverse %}
