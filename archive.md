@@ -2,5 +2,5 @@
 layout: news
 title: Latest News Archive
 permalink: /archive/
-limitYear: 2021
+limitYear: 2022
 ---
