@@ -9,11 +9,11 @@
 	"author": "Elise Kain",
 	"license": "ISC",
 	"devDependencies": {
-		"browser-sync": "^2.26.13",
+		"browser-sync": "^2.29.3",
 		"gulp": "^4.0.2",
 		"gulp-clean-css": "^3.9.0",
 		"gulp-concat": "^2.6.1",
-		"gulp-sass": "^3.1.0",
+		"gulp-sass": "^6.0.1",
 		"gulp-uglify": "^3.0.0",
 		"gulp-util": "^3.0.8"
 	},
