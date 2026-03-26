@@ -30,7 +30,7 @@ ul {
 
 a {
 	color: $link-color;
-	text-decoration: none;
+	text-decoration: underline;
 
   // Gets rid of tap active state
   -webkit-tap-highlight-color: transparent;
