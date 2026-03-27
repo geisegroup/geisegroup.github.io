@@ -1,8 +1,3 @@
-a {
-	color: $uva-orange;
-	text-decoration: underline;
-}
-
 body {
 	display: flex;
 	min-height: 100vh;
@@ -121,4 +116,9 @@ h4 {
 	margin-top: 0;
 	margin-bottom: 0;
 	vertical-align: top;
+}
+
+a {
+	color: $uva-orange;
+	text-decoration: underline;
 }
