@@ -4,6 +4,11 @@ body {
 	flex-direction: column;
 }
 
+a {
+	color: $uva-orange;
+	text-decoration: underline;
+}
+
 main {
 	flex: 1 0 auto;
 }
@@ -118,7 +123,4 @@ h4 {
 	vertical-align: top;
 }
 
-a {
-	color: $uva-orange;
-	text-decoration: underline;
-}
+
